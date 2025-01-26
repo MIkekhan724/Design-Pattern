@@ -1,0 +1,17 @@
+# dependency Inversion Principle
+
+Class should depend on inteface rather than concrete Class
+
+# this will ensure the loose Coupling
+
+class MacBook{
+
+  private final WiredKeyboard keyboard;
+
+  private final WiredMouse mouse;
+
+  public MacBook(){
+    keyboard= new WiredKeyboard();
+    mouse= new WiredMouse();
+  }
+}

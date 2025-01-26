@@ -1,0 +1,28 @@
+Interface segrigation/ Segmented principle
+
+It state that "Interface Should be such that, the client should not implements the unnecessory functions they do not need.
+
+public interface ResturantEmployee{
+  void washDishes();
+  void serveCustomer();
+  void cookFood();
+}
+
+public class Waiter implements ResturantEmployee{
+
+  public void washDishes()
+  {
+    // not my job
+  }
+
+  public void serveCustomer(){
+    Systemo.out.println(" Serve the customer");
+  }
+
+  public void cookFood(){
+    // Not my Job
+  }
+}
+
+
+# here waiter have to implements all the method that is unnecessory to waoid this we have to segrigate interface

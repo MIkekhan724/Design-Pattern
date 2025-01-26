@@ -1,0 +1,7 @@
+# Liskov Substituation principle
+
+-- if class B is the subtype of class A, then we should be able to replace object of A with B without breaking the behavoir of the program
+
+--- SubClass should extends the capability of parent class not narrow it down
+
+

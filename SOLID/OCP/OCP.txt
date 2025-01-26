@@ -1,0 +1,37 @@
+OCP-- Open Closeed principle
+
+open for extension but cLosed for Modification
+
+class InvoiceDao{
+  Invoice invoice;
+
+  public InvoiceDao(Invoice invoice)
+  {
+    this.invoice= invoice;
+  }
+
+  public void saveToDB(){
+    // Save into the Db
+  }
+}
+
+
+class InvoiceDao{
+  Invoice invoice;
+
+  public InvoiceDao(Invoice invoice)
+  {
+    this.invoice= invoice;
+  }
+
+  public void saveToDB(){
+    // Save into the Db
+  }
+
+  public void saveToFile(){
+    // Save into the file
+  }
+}
+
+# Note :- Now this is voilating the open closed principle
+# for extra capability you can extend but not modify
